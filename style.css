@@ -1,5 +1,8 @@
-.amazon {
+body {
     font-family: sans-serif;
+}
+
+.amazon {
     font-size: 48px;
     background-color: black;
     width: fit-content;
@@ -19,7 +22,6 @@
 .t {
     color: black;
     font-size: 48px;
-    font-family: sans-serif;
 }
 .witter {
     color: red;
@@ -27,7 +29,7 @@
 
 .google {
     font-size: 48px;
-    font-family: sans-serif;
+ 
     & .blue {
         color: #4285F4;
     }
@@ -47,7 +49,6 @@
 
 .nekopoi {
     font-size: 48px;
-    font-family: sans-serif;
     color: black;
 
     & .pink { 
@@ -55,15 +56,19 @@
     }
 }
 
-.bangbros {
-    font-size: 48px;
-    font-family: sans-serif;
-    background-color: black;
-    width: fit-content;
-    & .white {
-        color: white;
-    }
-    & .yellow {
-        color: yellow;
-    }
+a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+}
+
+a img {
+    vertical-align: middle;
+}
+
+footer {
+    text-align: center;
+    font-size: 12px;
+    color: #555;
 }
