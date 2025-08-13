@@ -11,4 +11,4 @@ Danne's website.
 - HTML, CSS (JavaScript soon maybe?)
 
 ## Visit
-[dannetzy.github.io](dannetzy.github.io)
+[dannetzy.github.io](https://dannetzy.github.io)
