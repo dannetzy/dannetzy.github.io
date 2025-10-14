@@ -1,0 +1,25 @@
+html {
+  font-family: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#toggle {
+  width: 100px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: plum;
+  cursor: pointer;
+  border: none;
+  font-size: 14px;
+}
+
+#toggle:hover {
+  background-color: color-mix(in srgb, plum 80%, white 20%);
+}
+
+#toggle:active {
+  background-color: color-mix(in srgb, plum 90%, grey 10%);
+}
