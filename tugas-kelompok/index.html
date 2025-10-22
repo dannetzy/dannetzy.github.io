@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas Kelompok</title>
+  <style>
+    :root {
+      --border-color: black;
+      --code-bg-color: #ddd;
+      --code-fg-color: #333;
+    }
+    * {
+      box-sizing: border-box;
+      font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    table, th, td {
+      border: 1px solid var(--border-color);
+      border-collapse: collapse;
+    }
+
+    table td {
+      width: 150px;
+      height: 150px;
+      text-align: center;
+      border: 1px solid var(--border-color);
+    }
+
+    code {
+      background-color: var(--code-bg-color);
+      border-radius: 8px;
+      font-family: monospace;
+      padding: 2px 4px;
+      color: var(--code-fg-color);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --border-color: #eee;
+        --code-bg-color: #444;
+        --code-fg-color: #eee;
+      }
+      body {
+        background-color: #121212;
+        color: #eee;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h2>Tugas Kelompok Membuat Merger Table Menggunakan Atribut <code>colspan</code> dan <code>rowspan</code></h2>
+  <h3>Anggota Kelompok</h3>
+  <ul>
+    <li>M. Danne Febrian</li>
+    <li>Fachri Syahputra</li>
+    <li>Siska Lestari</li>
+    <li>Lu'lu Nabila Zakkiyah</li>
+  </ul>
+  <table>
+    <tr>
+      <td colspan="2">1</td>
+      <td rowspan="3">3</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td colspan="2">7</td>
+    </tr>
+  </table>
+</body>
+</html>
