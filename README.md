@@ -1,14 +1,19 @@
-# dannetzy.github.io
+# My Personal Website
 
-Danne's website. 
+This repository contains the source code for my personal website and projects.
 
-## Features
-- 4 DanneTzy's styled like 4 different popular website logos
-- Link to this repository
-- Coming soon™
+## Projects
+
+| Project | Description | Live | Source |
+|----------|--------------|------|--------|
+| **Main Website** | My personal website. | [Visit](https://dannetzy.github.io/) | [Repo](https://github.com/dannetzy/dannetzy.github.io) |
+| **Jadwal Pelajaran** | Regularly (hopefully) updated class schedule. | [Preview](https://dannetzy.github.io/jadwal/) | [Repo](https://github.com/dannetzy/dannetzy.github.io/tree/main/jadwal) |
+| **Tugas Kelompok** | Demonstration of `colspan` and `rowspan` in HTML table. | [Preview](https://dannetzy.github.io/tugas-kelompok/) | [Repo](https://github.com/dannetzy/dannetzy.github.io/tree/main/tugas-kelompok) |
+| **Odin Projects** | My Odin course projects | [Preview](https://dannetzy.github.io/odin-projects/) | [Repo](https://github.com/dannetzy/dannetzy.github.io/tree/main/odin-projects) |
+
+
 
 ## Built With
-- HTML, CSS (JavaScript soon maybe?)
-
-## Visit
-[dannetzy.github.io](https://dannetzy.github.io)
+- HTML
+- CSS
+- Icons by [https://boxicons.com/](https://boxicons.com/)

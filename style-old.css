@@ -1,0 +1,82 @@
+body {
+    font-family: sans-serif;
+}
+
+.amazon {
+    font-size: 48px;
+    background-color: black;
+    width: fit-content;
+    padding: 8px;
+    color: white;
+    border-radius: 8px;
+}
+.zon {
+    background-color: #ff9000;
+    border-radius: 8px;
+    margin-left: 4px;
+    color: black;
+    padding-right: 4px;
+    padding-left: 4px;
+}
+
+.t {
+    color: black;
+    font-size: 48px;
+}
+.witter {
+    color: red;
+}
+
+.google {
+    font-size: 48px;
+ 
+    & .blue {
+        color: #4285F4;
+    }
+
+    & .red {
+        color: #EA4335;
+    }
+
+    & .green {
+        color: #34A853;
+    }
+
+    & .yellow {
+        color: #FBBC05;
+    }
+}
+
+.nekopoi {
+    font-size: 48px;
+    color: black;
+
+    & .pink { 
+        color: fuchsia;
+    }
+}
+
+.link {
+    display: block;
+    text-align: right;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a img {
+    vertical-align: middle;
+}
+
+footer {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 12px;
+    color: #555;
+}
+

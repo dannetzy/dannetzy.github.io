@@ -1,24 +1,143 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>DanneTzy</title>
-        <link rel="stylesheet" href="style.css">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <h1 class="amazon">Danne<span class="zon">Tzy</span></h1>                   
-        <h1 class="t"><span class="witter">D</span>ANNETZY</h1>
-        <h1 class="google">
-            <span class="blue">D</span><span class="red">a</span><span class="yellow">n</span><span class="blue">n</span><span class="green">e</span><span class="red">T</span><span class="yellow">z</span><span class="green">y</span>
-        </h1>
-        <h1 class="nekopoi"><span class="pink">D</span>anne<span class="pink">Tzy</span></h1>
-        <div class="link">
-            <a href="https://github.com/dannetzy/dannetzy.github.io" target="_blank" aria-label="GitHub">
-                dannetzy on github
-                <img src="assets/github.svg" width="24" height="24">
-            </a>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DanneTzy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="footer.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+  </head>
+  <body>
+    <header class="header">
+      <a href="https://dannetzy.github.io" class="corn">Danne<span class="hub">Tzy</span></a>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skill">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <section class="home" id="home">
+        <div class="home-content">
+          <h2>Hi there, I'm</h2>
+          <h1>M. Danne Febrian</h1>
+          <br>
+          <span>I'm a network engineering student and webdev learner</span>        
         </div>
-        <footer>Work in progress.</footer>
-    </body>
+      </section>
+      <section class="skills" id="skill">
+        <h1>Skills</h1>
+        <div class="skills-content">
+          <div id="skills">
+            <div class="skill">
+              <i style="color: #c95d2e; font-size: 20px; margin-bottom: 8px;" class='bxl bx-html5'></i> 
+              <p>HTML <span>80%</span></p>
+              <div class="bar"><div class="fill" style="width: 80%;"></div></div>
+            </div>
+
+            <div class="skill">
+              <i style="color: #147bbc; font-size: 20px; margin-bottom: 8px;" class="bxl bx-css3"></i> 
+              <p>CSS <span>60%</span></p>
+              <div class="bar"><div class="fill" style="width: 60%;"></div></div>
+            </div>
+
+            <div class="skill">
+              <i style="color: #b0bc1e; font-size: 20px; margin-bottom: 8px;" class="bxl bx-javascript"></i> 
+              <p>JavaScript <span>20%</span></p>
+              <div class="bar"><div class="fill" style="width: 20%;"></div></div>
+            </div>
+
+            <div class="skill">
+              <i style="color: var(--text-color); font-size: 20px; margin-bottom: 8px;" class="bxl bx-tux"></i> 
+              <p>Linux <span>90%</span></p>
+              <div class="bar"><div class="fill" style="width: 90%;"></div></div>
+            </div>
+
+            <div class="skill">
+              <i style="color: #f05133; font-size: 20px; margin-bottom: 8px;" class="bxl bx-git"></i> 
+              <p>Git <span>60%</span></p>
+              <div class="bar"><div class="fill" style="width: 60%;"></div></div>
+            </div>
+
+            <div class="skill">
+              <i style="color: #508d3d; font-size: 20px; margin-bottom: 8px;" class="bxl bx-neovim"></i> 
+              <p>Vim <span>80%</span></p>
+              <div class="bar"><div class="fill" style="width: 80%;"></div></div>
+            </div>
+      </section>
+      <section class="projects" id="projects">
+        <h1>Projects</h1>
+        <div class="projects-content">
+          <div class="project">
+            <a href="jadwal/">
+              <div class="image">
+                <img src="assets/img/jadwal.png" alt="Jadwal Pelajaran">
+              </div>
+              <div class="author">
+                <span class="author-text">DanneTzy <i class="bx bxs-check-circle" style="color: #3886ec;"></i></span>
+                <div class="viewlike">
+                  <span class="view"><i class="bx bxs-eye"></i> 12</span>
+                  <span class="like"><i class="bx bxs-like"></i> 100%</span>
+                </div>
+              </div>
+              <div class="title">
+                <span>Jadwal Pelajaran</span>
+                <i class="bx bx-dots-vertical-rounded"></i>
+              </div>
+            </a>
+          </div>
+          <div class="project">
+            <a href="tugas-kelompok/">
+              <div class="image">
+                <img src="assets/img/tugas-kelompok.png" alt="Tugas Kelompok">
+              </div>
+              <div class="author">
+                <span class="author-text">DanneTzy <i class="bx bxs-check-circle" style="color: #3886ec;"></i></span>
+                <div class="viewlike">
+                  <span class="view"><i class="bx bxs-eye"></i> 3</span>
+                  <span class="like"><i class="bx bxs-like"></i> 100%</span>
+                </div>
+              </div>
+              <div class="title">
+                <span>Tugas Kelompok</span>
+                <i class="bx bx-dots-vertical-rounded"></i>
+              </div>
+            </a>
+          </div>
+          <div class="project">
+            <a href="odin-projects/">
+              <div class="image">
+                <img src="assets/img/odin.png" alt="Tugas Kelompok">
+              </div>
+              <div class="author">
+                <span class="author-text">DanneTzy <i class="bx bxs-check-circle" style="color: #3886ec;"></i></span>
+                <div class="viewlike">
+                  <span class="view"><i class="bx bxs-eye"></i> 2</span>
+                  <span class="like"><i class="bx bxs-like"></i> 50%</span>
+                </div>
+              </div>
+              <div class="title">
+                <span>Odin Projects</span>
+                <i class="bx bx-dots-vertical-rounded"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <h1>Contact</h1>
+        <div class="contact-content">
+          <a href="https://www.github.com/dannetzy"><i class="bxl bx-github" style="color: var(--text-color);"></i></a>
+          <a href="https://www.youtube.com/@dannnntzy"><i class="bxl bx-youtube" style="color: #ff0033;"></i></a>
+        </div>
+        <div class="email"><i class="bx bx-envelope"></i> mdannefebrian@gmail.com</div>
+      </section>
+    </main>
+		<footer class="footer"><a href="https://dannetzy.github.io/">Made by DanneTzy</a></footer>
+  </body>
 </html>

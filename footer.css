@@ -1,0 +1,17 @@
+.footer {
+  text-align: center;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer a,
+.footer a:visited {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.footer a:hover {
+  text-decoration: none;
+}

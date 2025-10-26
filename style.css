@@ -1,82 +1,233 @@
+:root {
+  --text-color: black;
+  --bg-color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: #eee;
+    --bg-color: #121212;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
 body {
-    font-family: sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.amazon {
-    font-size: 48px;
-    background-color: black;
-    width: fit-content;
-    padding: 8px;
-    color: white;
-    border-radius: 8px;
-}
-.zon {
-    background-color: #ff9000;
-    border-radius: 8px;
-    margin-left: 4px;
-    color: black;
-    padding-right: 4px;
-    padding-left: 4px;
+.header {
+  padding: 10px 60px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: color-mix(in srgb, var(--bg-color) 50%, transparent 50%);
+  backdrop-filter: blur(32px);
 }
 
-.t {
-    color: black;
-    font-size: 48px;
-}
-.witter {
-    color: red;
+.header a {
+  text-decoration: none;
+  font-size: 1.25rem;
 }
 
-.google {
-    font-size: 48px;
- 
-    & .blue {
-        color: #4285F4;
-    }
-
-    & .red {
-        color: #EA4335;
-    }
-
-    & .green {
-        color: #34A853;
-    }
-
-    & .yellow {
-        color: #FBBC05;
-    }
+.header a:not(.corn) {
+  color: var(--text-color);
+  line-height: 1.8;
 }
 
-.nekopoi {
-    font-size: 48px;
-    color: black;
-
-    & .pink { 
-        color: fuchsia;
-    }
+.header a:not(.corn):hover {
+  color: #ff9000
 }
 
-.link {
-    display: block;
-    text-align: right;
+.header a:not(.corn):active {
+  color: color-mix(in srgb, #ff9000 70%, black 30%);
 }
 
-a {
-    color: black;
+.header nav {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
-a:hover {
-    text-decoration: none;
+@media (max-width: 700px) {
+  .header nav {
+    display: none;
+  }
+  .header {
+    justify-content: center;
+  }
 }
 
-a img {
-    vertical-align: middle;
+.home {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30px;
 }
 
-footer {
-    margin-top: 100px;
-    text-align: center;
-    font-size: 12px;
-    color: #555;
+a.corn {
+  background-color: black;
+  border-radius: 4px;
+  padding: 4px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: white;
 }
 
+a.corn .hub {
+  background-color: #ff9000;
+  border-radius: 4px;
+  padding: 0 2px;
+  margin-left: 0.25rem;
+  color: black;
+}
+
+.corn:hover {
+  background-color: #ff9000;
+  color: black;
+}
+
+.corn:hover .hub {
+  background-color: black;
+  color: white;
+}
+
+.corn:active {
+  background-color: black;
+  color: white;
+}
+
+.skills {
+  padding: 60px 30px 0;
+  min-height: 100vh;
+}
+
+.skills h1 {
+  text-align: center;
+}
+
+#skills {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: sans-serif;
+  color: var(--text-color);
+}
+
+#skills h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill p {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  font-size: 16px;
+}
+
+.bar {
+  width: 100%;
+  height: 10px;
+  background: color-mix(in srgb, var(--bg-color) 80%, var(--text-color) 20%);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  background: linear-gradient(90deg, #ff9000, #ffbb33);
+  border-radius: 5px 0 0 5px;
+  transition: width 0.8s ease;
+}
+
+.projects {
+  padding: 60px 30px 0;
+  min-height: 100vh;
+}
+
+.projects h1 {
+  text-align: center;
+}
+
+.projects-content {
+  display: flex;
+  justify-content: center;
+  gap: 2rem 1rem;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.author {
+  display: flex;
+  justify-content: space-between;
+}
+
+.author span {
+  font-size: .9rem;
+}
+
+i {
+  vertical-align: middle;
+}
+
+.project .title {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.project .image img {
+  width: 350px;
+  aspect-ratio: 16 / 9;
+}
+
+.contact {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0.5rem 0;
+}
+.contact-content a {
+  font-size: 2rem;
+}
+
+.contact-content a i {
+  transition: all 0.2s;
+}
+
+.contact-content a:hover i {
+  transform: scale(1.1);
+}
+
+.contact-content a:active i {
+  transform: scale(0.9);
+}
