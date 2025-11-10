@@ -17,16 +17,9 @@
       font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     }
 
-    table, th, td {
-      border: 1px solid var(--border-color);
+    table {
+      border-color: black;
       border-collapse: collapse;
-    }
-
-    table td {
-      width: 150px;
-      height: 150px;
-      text-align: center;
-      border: 1px solid var(--border-color);
     }
 
     code {
@@ -59,17 +52,30 @@
       <li>Siska Lestari</li>
       <li>Lu'lu Nabila Zakkiyah</li>
     </ul>
-    <table>
-      <tr>
-        <td colspan="2">1</td>
-        <td rowspan="3">3</td>
+    <table border="1">
+      <tr height="120px">
+        <td width="120px" rowspan="4" style="background-color: blueviolet;"></td>
+        <td width="70px" colspan="3" style="background-color: lightsalmon;"></td>
+        <td width="50px" rowspan="2" style="background-color: cyan;"></td>
+        <td width="110px" style="background-color: hotpink;"></td>
+        <td width="150px" rowspan="5" style="background-color: gold;"></td>
       </tr>
-      <tr>
-        <td>4</td>
-        <td>5</td>
+      <tr height="80px">
+        <td width="70px" rowspan="2" style="background-color: lightskyblue;"></td>
+        <td width="100px" style="background-color: mediumpurple;"></td>
+        <td width="80px" style="background-color: khaki;"></td>
+        <td width="110px" rowspan="3" style="background-color: mediumspringgreen;"></td>
       </tr>
-      <tr>
-        <td colspan="2">7</td>
+      <tr height="70px">
+        <td width="100px" colspan="3" style="background-color: lightcoral;"></td>
+      </tr>
+      <tr height="90px">
+        <td width="70px" colspan="2" style="background-color: lawngreen;"></td>
+        <td width="80px" colspan="2" style="background-color: mistyrose;"></td>
+      </tr>
+      <tr height="120px">
+        <td width="120px" colspan="5" style="background-color: palegoldenrod;"></td>
+        <td width="110px" style="background-color: paleturquoise;"></td>
       </tr>
     </table>
 		<footer class="footer">

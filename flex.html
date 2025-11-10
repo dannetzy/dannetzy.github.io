@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Flex test</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      .flex-wrapper {
+        display: flex;
+        gap: 2rem;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .flex-items {
+        flex: 0 1 150px;
+        height: 150px;
+        background-color: yellow;
+        border: 2px solid orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-wrapper">
+      <div class="flex-items"></div>
+    </div>
+  </body>
+</html>
