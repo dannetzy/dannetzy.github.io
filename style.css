@@ -231,3 +231,24 @@ i {
 .contact-content a:active i {
   transform: scale(0.9);
 }
+
+.tag {
+  font-size: 0.8rem;
+  border-radius: 8px;
+  padding: 0 8px;
+}
+
+.tag.html {
+  background-color: #c95d2e;
+  color: white;
+}
+
+.tag.css {
+  background-color: #147bbc;
+  color: white;
+}
+
+.tag.js {
+  background-color: #b0bc1e;
+  color: white;
+}
