@@ -1,6 +1,9 @@
 :root {
   --text-color: black;
   --bg-color: white;
+  --color-html: #E34C26;
+  --color-css: #264DE4;
+  --color-js: #F7DF1E;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -239,16 +242,16 @@ i {
 }
 
 .tag.html {
-  background-color: #c95d2e;
+  background-color: var(--color-html);
   color: white;
 }
 
 .tag.css {
-  background-color: #147bbc;
+  background-color: var(--color-css);
   color: white;
 }
 
 .tag.js {
-  background-color: #b0bc1e;
-  color: white;
+  background-color: var(--color-js);
+  color: black;
 }
