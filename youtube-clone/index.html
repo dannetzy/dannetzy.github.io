@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="tailwind.css">
+</head>
+<body class="bg-zinc-950 text-white overflow-x-hidden">
+  <header class="flex justify-between gap-4 px-4 py-2 w-1/1 sticky top-0 z-20 backdrop-blur-2xl bg-zinc-950/80 max-lg:justify-start">
+    <div class="flex gap-4">
+      <button class="rounded-full shrink-0 h-10 w-10 flex justify-center items-center hover:bg-zinc-700">
+        <span class="icon text-2xl">menu</span>
+      </button>
+      <div class="h-10 inline-flex shrink-0 justify-center items-center">
+        <img src="assets/logo/yt-logo.svg" alt="YouTube Logo" class="h-5">
+      </div>
+    </div>
+    <div class="flex w-150 min-w-0 max-lg:w-fit max-lg:ml-auto">
+      <input class="rounded-tl-full rounded-bl-full border-1 border-zinc-800 bg-zinc-950/60 text-zinc-300 grow pl-4 max-lg:hidden" placeholder="Search">
+      <button class="shrink-0 rounded-tr-full rounded-br-full border-1 border-zinc-800 bg-zinc-800 h-10 w-16 max-lg:rounded-full max-lg:w-10">
+        <span class="icon text-2xl">search</span>
+      </button>
+      <button class="rounded-full h-10 w-10 ml-4 bg-zinc-800 flex shrink-0 justify-center items-center hover:hover:bg-zinc-700">
+        <span class="icon text-2xl">mic</span>
+      </button>
+    </div>
+    <div class="flex gap-4 items-center">
+      <button class="rounded-full h-9 bg-zinc-800 font-semibold flex justify-center items-center gap-2 hover:bg-zinc-700 pl-3 pr-4 max-sm:h-10 max-sm:w-10 max-sm:p-0">
+        <span class="icon text-xl">add</span> 
+        <span class="text-sm max-sm:hidden">Create</span>
+      </button>
+      <button class="rounded-full h-10 w-10 flex justify-center items-center gap-2 hover:bg-zinc-700">
+        <span class="icon text-2xl">notifications</span>
+      </button>
+      <div class="h-8 w-8">
+        <img src="https://placehold.co/48x48?text=Pfp" alt="PP Danne" class="rounded-full">
+      </div>
+    </div>
+  </header>
+  <main>
+    <aside class="flex flex-col w-56 fixed left-0 overflow-y-auto max-sm:hidden" style="height: calc(100vh - 56px);">
+      <div class="flex flex-col border-b border-b-zinc-800 p-3">
+        <div class="rounded-xl inline-flex items-center h-10 gap-5 px-2 py-1 bg-zinc-800 hover:bg-zinc-700">
+          <span class="icon filled text-2xl">home</span> 
+          <span class="text-sm font-semibold">Home</span>
+        </div>
+        <div class="rounded-xl inline-flex items-center h-10 gap-5 px-2 py-1 hover:bg-zinc-800">
+          <span class="icon text-2xl">play_circle</span> 
+          <span class="text-sm">Shorts</span>
+        </div>
+      </div>
+      <div class="flex flex-col border-b border-b-zinc-800 p-3">
+        <div class="rounded-xl inline-flex items-center h-10 gap-2 px-2 py-1 hover:bg-zinc-800">
+          <span class="text-base font-semibold">Subscriptions</span>
+          <span class="icon filled text-[0.125rem]">arrow_forward_ios</span> 
+        </div>
+        <div class="rounded-xl inline-flex items-center h-10 gap-5 px-2 py-1 hover:bg-zinc-800">
+          <div class="shrink-0 w-6 h-6">
+            <img src="https://placehold.co/48x48?text=Pfp" alt="Aniplex" class="rounded-full">
+          </div> 
+          <span class="text-sm text-nowrap overflow-hidden overflow-ellipsis -mr-2">アニプレックス チャンネル</span>
+          <span class="icon text-xl text-red-800 ml-auto">sensors</span>
+        </div>
+        <div class="rounded-xl inline-flex items-center h-10 gap-5 px-2 py-1 hover:bg-zinc-800">
+          <div class="shrink-0 w-6 h-6">
+            <img src="https://placehold.co/48x48?text=Pfp" alt="Aniplex" class="rounded-full">
+          </div> 
+          <span class="text-sm text-nowrap overflow-hidden overflow-ellipsis -mr-2">Eakes</span>
+          <span class="icon text-xl text-red-800 ml-auto">sensors</span>
+        </div>
+        <div class="rounded-xl inline-flex items-center h-10 gap-5 px-2 py-1 hover:bg-zinc-800">
+          <div class="shrink-0 w-6 h-6">
+            <img src="https://placehold.co/48x48?text=Pfp" alt="Aniplex" class="rounded-full">
+          </div> 
+          <span class="text-sm text-nowrap overflow-hidden overflow-ellipsis -mr-2">jstern25</span>
+          <span class="icon text-xl text-red-800 ml-auto">sensors</span>
+        </div>
+        <div class="rounded-xl inline-flex items-center h-10 gap-5 px-2 py-1 hover:bg-zinc-800">
+          <div class="shrink-0 w-6 h-6">
+            <img src="https://placehold.co/48x48?text=Pfp" alt="Aniplex" class="rounded-full">
+          </div> 
+          <span class="text-sm text-nowrap overflow-hidden overflow-ellipsis -mr-2">MUSE Indonesia</span>
+          <span class="icon text-xl text-red-800 ml-auto">sensors</span>
+        </div>
+        <div class="rounded-xl inline-flex items-center h-10 gap-5 px-2 py-1 hover:bg-zinc-800">
+          <div class="shrink-0 w-6 h-6">
+            <img src="https://placehold.co/48x48?text=Pfp" alt="Aniplex" class="rounded-full">
+          </div> 
+          <span class="text-sm text-nowrap overflow-hidden overflow-ellipsis -mr-2">Zy0x Archives</span>
+          <span class="icon filled text-center min-w-5 text-xs scale-50 text-blue-400 ml-auto">circle</span>
+        </div>
+        <div class="rounded-xl inline-flex items-center h-10 gap-5 px-2 py-1 hover:bg-zinc-800">
+          <div class="shrink-0 w-6 h-6">
+            <img src="https://placehold.co/48x48?text=Pfp" alt="Aniplex" class="rounded-full">
+          </div> 
+          <span class="text-sm text-nowrap overflow-hidden overflow-ellipsis -mr-2">Zajef77</span>
+          <span class="icon text-base ml-auto"></span>
+        </div>
+        <div class="rounded-xl inline-flex items-center h-10 gap-5 px-2 py-1 hover:bg-zinc-800">
+          <div class="shrink-0 w-6 h-6">
+            <img src="https://placehold.co/48x48?text=Pfp" alt="Aniplex" class="rounded-full">
+          </div> 
+          <span class="text-sm text-nowrap overflow-hidden overflow-ellipsis -mr-2">Zajef Daily</span>
+          <span class="icon filled text-center min-w-5 text-xs scale-50 text-blue-400 ml-auto">circle</span>
+        </div>
+        <div class="rounded-xl inline-flex items-center h-10 gap-5 px-2 py-1 hover:bg-zinc-800">
+          <span class="icon filled text-2xl">keyboard_arrow_down</span> 
+          <span class="text-sm">Show more</span>
+        </div>
+      </div>
+      <div class="flex flex-col border-b border-b-zinc-800 p-3">
+        <div class="rounded-xl inline-flex items-center h-10 gap-2 px-2 py-1 hover:bg-zinc-800">
+          <span class="text-base font-semibold">You</span>
+          <span class="icon filled text-[0.125rem]">arrow_forward_ios</span> 
+        </div>
+        <div class="rounded-xl inline-flex items-center h-10 gap-5 px-2 py-1 hover:bg-zinc-800">
+          <span class="icon text-2xl">history</span> 
+          <span class="text-sm">History</span>
+        </div>
+        <div class="rounded-xl inline-flex items-center h-10 gap-5 px-2 py-1 hover:bg-zinc-800">
+          <span class="icon text-2xl">playlist_play</span> 
+          <span class="text-sm">Playlists</span>
+        </div>
+        <div class="rounded-xl inline-flex items-center h-10 gap-5 px-2 py-1 hover:bg-zinc-800">
+          <span class="icon text-2xl">schedule</span> 
+          <span class="text-sm">Watch later</span>
+        </div>
+        <div class="rounded-xl inline-flex items-center h-10 gap-5 px-2 py-1 hover:bg-zinc-800">
+          <span class="icon text-2xl">thumb_up</span> 
+          <span class="text-sm">Liked videos</span>
+        </div>
+        <div class="rounded-xl inline-flex items-center h-10 gap-5 px-2 py-1 hover:bg-zinc-800">
+          <span class="icon text-2xl">smart_display</span> 
+          <span class="text-sm">Your videos</span>
+        </div>
+        <div class="rounded-xl inline-flex items-center h-10 gap-5 px-2 py-1 hover:bg-zinc-800">
+          <span class="icon text-2xl">download</span> 
+          <span class="text-sm">Downloads</span>
+        </div>
+      </div>
+      <div class="flex flex-col border-b border-b-zinc-800 p-3">
+        <div class="h-10 px-2 py-1">
+          <span class="text-base font-semibold">Explore</span>
+        </div>
+        <div class="rounded-xl inline-flex items-center h-10 gap-5 px-2 py-1 hover:bg-zinc-800">
+          <span class="icon text-2xl">music_note</span> 
+          <span class="text-sm">Music</span>
+        </div>
+        <div class="rounded-xl inline-flex items-center h-10 gap-5 px-2 py-1 hover:bg-zinc-800">
+          <span class="icon text-2xl">movie</span> 
+          <span class="text-sm">Movies</span>
+        </div>
+        <div class="rounded-xl inline-flex items-center h-10 gap-5 px-2 py-1 hover:bg-zinc-800">
+          <span class="icon text-2xl">sensors</span> 
+          <span class="text-sm">Live</span>
+        </div>
+        <div class="rounded-xl inline-flex items-center h-10 gap-5 px-2 py-1 hover:bg-zinc-800">
+          <span class="icon text-2xl">sports_esports</span> 
+          <span class="text-sm">Gaming</span>
+        </div>
+        <div class="rounded-xl inline-flex items-center h-10 gap-5 px-2 py-1 hover:bg-zinc-800">
+          <span class="icon text-2xl">newspaper</span> 
+          <span class="text-sm">News</span>
+        </div>
+        <div class="rounded-xl inline-flex items-center h-10 gap-5 px-2 py-1 hover:bg-zinc-800">
+          <span class="icon text-2xl">trophy</span> 
+          <span class="text-sm">Sports</span>
+        </div>
+        <div class="rounded-xl inline-flex items-center h-10 gap-5 px-2 py-1 hover:bg-zinc-800">
+          <span class="icon text-2xl">lightbulb</span> 
+          <span class="text-sm">Learning</span>
+        </div>
+        <div class="rounded-xl inline-flex items-center h-10 gap-5 px-2 py-1 hover:bg-zinc-800">
+          <span class="icon text-2xl">checkroom</span> 
+          <span class="text-sm">Fashion & Beauty</span>
+        </div>
+        <div class="rounded-xl inline-flex items-center h-10 gap-5 px-2 py-1 hover:bg-zinc-800">
+          <span class="icon text-2xl">keyboard_arrow_up</span> 
+          <span class="text-sm">Show less</span>
+        </div>
+      </div>
+      <div class="flex flex-col border-b border-b-zinc-800 p-3">
+        <div class="h-10 px-2 py-1">
+          <span class="text-base font-semibold">More from YouTube</span>
+        </div>
+        <div class="rounded-xl inline-flex items-center h-10 gap-5 px-2 py-1 hover:bg-zinc-800">
+          <span class="icon text-2xl">smart_display</span> 
+          <span class="text-sm">YouTube Premium</span>
+        </div>
+        <div class="rounded-xl inline-flex items-center h-10 gap-5 px-2 py-1 hover:bg-zinc-800">
+          <span class="icon text-2xl">music_note</span> 
+          <span class="text-sm">YouTube Studio</span>
+        </div>
+        <div class="rounded-xl inline-flex items-center h-10 gap-5 px-2 py-1 hover:bg-zinc-800">
+          <span class="icon text-2xl">play_circle</span> 
+          <span class="text-sm">YouTube Music</span>
+        </div>
+        <div class="rounded-xl inline-flex items-center h-10 gap-5 px-2 py-1 hover:bg-zinc-800">
+          <span class="icon text-2xl">smart_display</span> 
+          <span class="text-sm">YouTube Kids</span>
+        </div>
+      </div>
+      <div class="flex flex-col border-b border-b-zinc-800 p-3">
+        <div class="rounded-xl inline-flex items-center h-10 gap-5 px-2 py-1 hover:bg-zinc-800">
+          <span class="icon text-2xl">settings</span> 
+          <span class="text-sm">Settings</span>
+        </div>
+        <div class="rounded-xl inline-flex items-center h-10 gap-5 px-2 py-1 hover:bg-zinc-800">
+          <span class="icon text-2xl">flag_2</span> 
+          <span class="text-sm">Report history</span>
+        </div>
+        <div class="rounded-xl inline-flex items-center h-10 gap-5 px-2 py-1 hover:bg-zinc-800">
+          <span class="icon text-2xl">help</span> 
+          <span class="text-sm">Help</span>
+        </div>
+        <div class="rounded-xl inline-flex items-center h-10 gap-5 px-2 py-1 hover:bg-zinc-800">
+          <span class="icon text-2xl">feedback</span> 
+          <span class="text-sm">Send feedback</span>
+        </div>
+      </div>
+      <div class="flex flex-col gap-4 border-b border-b-zinc-800 px-5 p-4">
+        <div class="font-bold inline-flex gap-x-2 gap-y-1 flex-wrap text-zinc-400 text-xs">
+          <a href="#">About</a>
+          <a href="#">Press</a>
+          <a href="#">Copyright</a>
+          <a href="#">Contact us</a>
+          <a href="#">Creators</a>
+          <a href="#">Advertise</a>
+          <a href="#">Developers</a>
+        </div>
+        <div class="font-bold inline-flex gap-x-2 gap-y-1 flex-wrap text-zinc-400 text-xs">
+          <a href="#">Terms</a>
+          <a href="#">Privacy</a>
+          <a href="#">Policy & Safety</a>
+          <a href="#">How YouTube works</a>
+          <a href="#">Test new features</a>
+        </div>
+        <div class="text-xs text-zinc-600">
+          <p>&copy; 2025 Google LLC</p>
+          <p>Clone by DanneTzy</p>
+        </div>
+      </div>
+    </aside>
+    <div class="sm:ml-56">
+      <div class="flex gap-3 px-6 py-4 sticky top-14 z-20 text-sm font-semibold backdrop-blur-2xl bg-zinc-950/80 overflow-hidden">
+        <div class="shrink-0 rounded-md bg-white text-black py-[6px] px-3">All</div>
+        <div class="shrink-0 rounded-md bg-zinc-800 text-white py-[6px] px-3">Genshin Impact</div>
+        <div class="shrink-0 rounded-md bg-zinc-800 text-white py-[6px] px-3">Honkai: Star Rail</div>
+        <div class="shrink-0 rounded-md bg-zinc-800 text-white py-[6px] px-3">Music</div>
+        <div class="shrink-0 rounded-md bg-zinc-800 text-white py-[6px] px-3">Wuthering Waves</div>
+        <div class="shrink-0 rounded-md bg-zinc-800 text-white py-[6px] px-3">Podcasts</div>
+        <div class="shrink-0 rounded-md bg-zinc-800 text-white py-[6px] px-3">Mixes</div>
+        <div class="shrink-0 rounded-md bg-zinc-800 text-white py-[6px] px-3">Live</div>
+        <div class="shrink-0 rounded-md bg-zinc-800 text-white py-[6px] px-3">Media theories</div>
+        <div class="shrink-0 rounded-md bg-zinc-800 text-white py-[6px] px-3">Formula 1</div>
+        <div class="shrink-0 rounded-md bg-zinc-800 text-white py-[6px] px-3">Physics</div>
+        <div class="shrink-0 rounded-md bg-zinc-800 text-white py-[6px] px-3">Dramedy</div>
+        <div class="shrink-0 rounded-md bg-zinc-800 text-white py-[6px] px-3">Computers</div>
+        <div class="shrink-0 rounded-md bg-zinc-800 text-white py-[6px] px-3">Lessons</div>
+        <div class="shrink-0 rounded-md bg-zinc-800 text-white py-[6px] px-3">Animated films</div>
+        <div class="shrink-0 rounded-md bg-zinc-800 text-white py-[6px] px-3">Gaming</div>
+      </div>
+      <div class="flex gap-x-3 gap-y-8 px-6 mt-8 flex-wrap justify-center">
+        <div class="flex flex-col gap-2 w-130">
+          <div class="relative">
+            <img src="https://placehold.co/520x292?text=Thumbnail" alt="DOUBLE the VAs, DOUBLE the RAGEBAIT, DOUBLE the BLOOMING (The Great Blooming III) thumbnail" class="rounded-xl">
+            <span class="absolute bottom-2 right-2 text-xs bg-black/70 px-1 py-[2px] rounded-sm">36:29</span>
+          </div>
+          <div class="flex gap-2">
+            <div class="w-9 shrink-0">
+              <img src="https://placehold.co/48x48?text=Pfp" alt="lement pfp" class="rounded-full">
+            </div>
+            <div class="flex flex-col text-zinc-300">
+              <span class="font-bold text-white text-base text-wrap">DOUBLE the VAs, DOUBLE the RAGEBAIT, DOUBLE the BLOOMING (The Great Blooming III)</span>
+              <span class="text-sm">lement</span>
+              <spann class="text-sm">19K views • 2 days ago</span>
+            </div>
+            <div class="ml-auto">
+              <span class="icon text-2xl">more_vert</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-2 w-130">
+          <div class="relative">
+            <img src="https://placehold.co/520x292?text=Thumbnail" alt="Driving Xiaomi's Electric Car: Are we Cooked? thumbnail" class="rounded-xl">
+            <span class="absolute bottom-2 right-2 text-xs bg-black/70 px-1 py-[2px] rounded-sm">17:25</span>
+          </div>
+          <div class="flex gap-2">
+            <div class="w-9 shrink-0">
+              <img src="https://placehold.co/48x48?text=Pfp" alt="lement pfp" class="rounded-full">
+            </div>
+            <div class="flex flex-col text-zinc-300">
+              <span class="font-bold text-white text-base text-wrap">Driving Xiaomi's Electric Car: Are we Cooked?</span>
+              <span class="text-sm">Marques Brownlee <span class="icon filled align-middle">check_circle</span></span>
+              <spann class="text-sm">1M views • 7 hours ago</span>
+            </div>
+            <div class="ml-auto">
+              <span class="icon text-2xl">more_vert</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-2 w-130">
+          <div class="relative">
+            <img src="https://placehold.co/520x292?text=Thumbnail" alt="DOUBLE the VAs, DOUBLE the RAGEBAIT, DOUBLE the BLOOMING (The Great Blooming III) thumbnail" class="rounded-xl">
+            <span class="absolute bottom-2 right-2 text-xs bg-black/70 px-1 py-[2px] rounded-sm">35:23</span>
+          </div>
+          <div class="flex gap-2">
+            <div class="w-9 shrink-0">
+              <img src="https://placehold.co/48x48?text=Pfp" alt="lement pfp" class="rounded-full">
+            </div>
+            <div class="flex flex-col text-zinc-300">
+              <span class="font-bold text-white text-base text-wrap">The Man Who Accidentally Discovered Antimatter</span>
+              <span class="text-sm">Veritasium <span class="icon filled align-middle">check_circle</span></span>
+              <spann class="text-sm">1.6M views • 19 hours ago</span>
+            </div>
+            <div class="ml-auto">
+              <span class="icon text-2xl">more_vert</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-2 w-130">
+          <div class="relative">
+            <img src="https://placehold.co/520x292?text=Thumbnail" alt="DOUBLE the VAs, DOUBLE the RAGEBAIT, DOUBLE the BLOOMING (The Great Blooming III) thumbnail" class="rounded-xl">
+            <span class="absolute bottom-2 right-2 text-xs bg-black/70 px-1 py-[2px] rounded-sm">1:04:26</span>
+          </div>
+          <div class="flex gap-2">
+            <div class="w-9 shrink-0">
+              <img src="https://placehold.co/48x48?text=Pfp" alt="lement pfp" class="rounded-full">
+            </div>
+            <div class="flex flex-col text-zinc-300">
+              <span class="font-bold text-white text-base text-wrap">All Of Human History In One Hour</span>
+              <span class="text-sm">Kurzgesagt - In a Nutshell <span class="icon filled align-middle">check_circle</span></span>
+              <spann class="text-sm">616K views • 14 hours ago</span>
+            </div>
+            <div class="ml-auto">
+              <span class="icon text-2xl">more_vert</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-2 w-130">
+          <div class="relative">
+            <img src="https://placehold.co/520x292?text=Thumbnail" alt="DOUBLE the VAs, DOUBLE the RAGEBAIT, DOUBLE the BLOOMING (The Great Blooming III) thumbnail" class="rounded-xl">
+            <span class="absolute bottom-2 right-2 text-xs bg-black/70 px-1 py-[2px] rounded-sm">23:40</span>
+          </div>
+          <div class="flex gap-2">
+            <div class="w-9 shrink-0">
+              <img src="https://placehold.co/48x48?text=Pfp" alt="lement pfp" class="rounded-full">
+            </div>
+            <div class="flex flex-col text-zinc-300">
+              <span class="font-bold text-white text-base text-wrap">These Banners Are Diabolical | Genshin Impact 6.2 Phase 1 Banners Review</span>
+              <span class="text-sm">Zajef77</span>
+              <spann class="text-sm">61K views • 2 days ago</span>
+            </div>
+            <div class="ml-auto">
+              <span class="icon text-2xl">more_vert</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-2 w-130">
+          <div class="relative">
+            <img src="https://placehold.co/520x292?text=Thumbnail" alt="DOUBLE the VAs, DOUBLE the RAGEBAIT, DOUBLE the BLOOMING (The Great Blooming III) thumbnail" class="rounded-xl">
+            <span class="absolute bottom-2 right-2 text-xs bg-black/70 px-1 py-[2px] rounded-sm">11:44</span>
+          </div>
+          <div class="flex gap-2">
+            <div class="w-9 shrink-0">
+              <img src="https://placehold.co/48x48?text=Pfp" alt="lement pfp" class="rounded-full">
+            </div>
+            <div class="flex flex-col text-zinc-300">
+              <span class="font-bold text-white text-base text-wrap">C0 Cyno Lunar & C6 Hexerei Razor Overload | F2P Spiral Abyss 6.2 Floor 12 | Genshin Impact</span>
+              <span class="text-sm">NeuvTube</span>
+              <spann class="text-sm">1.2K views • 2 days ago</span>
+            </div>
+            <div class="ml-auto">
+              <span class="icon text-2xl">more_vert</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="text-xl font-bold mt-8 ml-6">Latest Youtube posts</h3>
+      <div class="flex gap-x-3 gap-y-8 px-6 mt-8 flex-wrap justify-center">
+        <div class="flex flex-col justify-between rounded-xl gap-2 px-6 py-4 w-130 border border-zinc-600 bg-zinc-800">
+          <div class="flex gap-2 items-center">
+            <img src="https://placehold.co/48x48?text=Pfp" alt="Rice Chan PFP" class="w-6 h-6 rounded-full">
+            <span class="text-sm text-zinc-400">Rice Chan • 3 hours ago</span>
+          </div>
+          <div class="flex justify-between">
+            <span>WIFE IS BACKKKKKKKKKKKKK</span>
+            <img src="https://placehold.co/128x128?text=Image" alt="Firefly" class="w-32 h-32 rounded-xl">
+          </div>
+          <div class="flex justify-between">
+            <div class="flex gap-2 items-center">
+              <div class="rounded-full inline-flex justify-center items-center w-8 h-8 hover:bg-zinc-700">
+                <span class="icon text-white text-xl">thumb_up</span>
+              </div>
+              <span class="text-sm">2.2K</span>
+              <div class="rounded-full inline-flex justify-center items-center w-8 h-8 hover:bg-zinc-700">
+                <span class="icon text-white text-xl ">thumb_down</span>
+              </div>
+            </div>
+            <div class="flex gap-2 items-center">
+              <div class="rounded-full inline-flex justify-center items-center w-8 h-8 hover:bg-zinc-700">
+                <span class="icon text-white text-xl ">share</span>
+              </div>
+              <div class="rounded-full inline-flex justify-center items-center gap-2 px-2 h-8 hover:bg-zinc-700">
+                <span class="icon text-white text-xl ">comment</span> 33
+              </div>
+              <div class="rounded-full inline-flex justify-center items-center w-8 h-8 hover:bg-zinc-700">
+                <span class="icon text-white text-xl ">more_vert</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col justify-between rounded-xl gap-2 px-6 py-4 w-130 border border-zinc-600 bg-zinc-800">
+          <div class="flex gap-2 items-center">
+            <img src="https://placehold.co/48x48?text=Pfp" alt="Jianxin Wuwa PFP" class="w-6 h-6 rounded-full">
+            <span class="text-sm text-zinc-400">Jianxin Wuwa • 19 hours ago</span>
+          </div>
+          <div class="flex flex-col gap-4 text-sm">
+            <span class="text-white">New character pull priority?</span>
+            <span class="text-zinc-400">22K votes</span>
+            <button class="rounded-full text-blue-400 font-semibold px-3 py-2 border border-zinc-400 w-fit hover:bg-blue-400/20 hover:border-blue-400/20">Vote now</button>
+          </div>
+          <div class="flex justify-between">
+            <div class="flex gap-2 items-center">
+              <div class="rounded-full inline-flex justify-center items-center w-8 h-8 hover:bg-zinc-700">
+                <span class="icon text-white text-xl">thumb_up</span>
+              </div>
+              <span class="text-sm">344</span>
+              <div class="rounded-full inline-flex justify-center items-center w-8 h-8 hover:bg-zinc-700">
+                <span class="icon text-white text-xl">thumb_down</span>
+              </div>
+            </div>
+            <div class="flex gap-2 items-center">
+              <div class="rounded-full inline-flex justify-center items-center w-8 h-8 hover:bg-zinc-700">
+                <span class="icon text-white text-xl">share</span>
+              </div>
+              <div class="rounded-full inline-flex justify-center items-center gap-2 px-2 h-8 hover:bg-zinc-700">
+                <span class="icon text-white text-xl">comment</span> 
+                <span class="text-sm">169</span>
+              </div>
+              <div class="rounded-full inline-flex justify-center items-center w-8 h-8 hover:bg-zinc-700">
+                <span class="icon text-white text-xl">more_vert</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col justify-between rounded-xl gap-2 px-6 py-4 w-130 border border-zinc-600 bg-zinc-800">
+          <div class="flex gap-2 items-center">
+            <img src="https://placehold.co/48x48?text=Pfp" alt="Stargaze PFP" class="w-6 h-6 rounded-full">
+            <span class="text-sm text-zinc-400">Stargaze • 14 hours ago</span>
+          </div>
+          <div class="flex flex-col gap-4 text-sm">
+            <span class="text-white">Which is more likely? Why??</span>
+            <span class="text-zinc-400">31K votes</span>
+            <button class="rounded-full text-blue-400 font-semibold px-3 py-2 border border-zinc-400 w-fit hover:bg-blue-400/20 hover:border-blue-400/20">Vote now</button>
+          </div>
+          <div class="flex justify-between">
+            <div class="flex gap-2 items-center">
+              <div class="rounded-full inline-flex justify-center items-center w-8 h-8 hover:bg-zinc-700">
+                <span class="icon text-white text-xl">thumb_up</span>
+              </div>
+              <span class="text-sm">959</span>
+              <div class="rounded-full inline-flex justify-center items-center w-8 h-8 hover:bg-zinc-700">
+                <span class="icon text-white text-xl">thumb_down</span>
+              </div>
+            </div>
+            <div class="flex gap-2 items-center">
+              <div class="rounded-full inline-flex justify-center items-center w-8 h-8 hover:bg-zinc-700">
+                <span class="icon text-white text-xl ">share</span>
+              </div>
+              <div class="rounded-full inline-flex justify-center items-center gap-2 px-2 h-8 hover:bg-zinc-700">
+                <span class="icon text-white text-xl ">comment</span> 
+                <span class="text-sm">679</span>
+              </div>
+              <div class="rounded-full inline-flex justify-center items-center w-8 h-8 hover:bg-zinc-700">
+                <span class="icon text-white text-xl ">more_vert</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex gap-x-3 gap-y-8 px-6 mt-8 flex-wrap justify-center">
+        <div class="flex flex-col gap-2 w-130">
+          <div class="relative">
+            <img src="https://placehold.co/520x292?text=Thumbnail" alt="Sad Friendzones Analyzed Like Games of Chess thumbnail" class="rounded-xl">
+            <span class="absolute bottom-2 right-2 text-xs bg-black/70 px-1 py-[2px] rounded-sm">29:01</span>
+          </div>
+          <div class="flex gap-2">
+            <div class="w-9 shrink-0">
+              <img src="https://placehold.co/48x48?text=Pfp" alt="lement pfp" class="rounded-full">
+            </div>
+            <div class="flex flex-col text-zinc-300">
+              <span class="font-bold text-white text-base text-wrap">Sad Friendzones Analyzed Like Games of Chess</span>
+              <span class="text-sm">Text Chess <span class="icon filled align-middle">check_circle</span></span>
+              <spann class="text-sm">17K views • 1 day ago</span>
+            </div>
+            <div class="ml-auto">
+              <span class="icon text-2xl">more_vert</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-2 w-130">
+          <div class="relative">
+            <img src="https://placehold.co/520x292?text=Thumbnail" alt="[zy0x] bro gets masterfully rage baited by a genshin UGC gamemode (he finds out hs balding thumbnail" class="rounded-xl">
+            <span class="absolute bottom-2 right-2 text-xs bg-black/70 px-1 py-[2px] rounded-sm">16:58</span>
+          </div>
+          <div class="flex gap-2">
+            <div class="w-9 shrink-0">
+              <img src="https://placehold.co/48x48?text=Pfp" alt="GachaGem pfp" class="rounded-full">
+            </div>
+            <div class="flex flex-col text-zinc-300">
+              <span class="font-bold text-white text-base text-wrap">[zy0x] bro gets masterfully rage baited by a genshin UGC gamemode (he finds out hs balding</span>
+              <span class="text-sm">GachaGem</span>
+              <spann class="text-sm">3K views • 1 day ago</span>
+            </div>
+            <div class="ml-auto">
+              <span class="icon text-2xl">more_vert</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-2 w-130">
+          <div class="relative">
+            <img src="https://placehold.co/520x292?text=Thumbnail" alt="Shell's Biggest Marketing Scam thumbnail" class="rounded-xl">
+            <span class="absolute bottom-2 right-2 text-xs bg-black/70 px-1 py-[2px] rounded-sm">27:04</span>
+          </div>
+          <div class="flex gap-2">
+            <div class="w-9 shrink-0">
+              <img src="https://placehold.co/48x48?text=Pfp" alt="fern pfp" class="rounded-full">
+            </div>
+            <div class="flex flex-col text-zinc-300">
+              <span class="font-bold text-white text-base text-wrap">Shell's Biggest Marketing Scam</span>
+              <span class="text-sm">fern <span class="icon filled align-middle">check_circle</span></span>
+              <spann class="text-sm">1.2M views • 1 year ago</span>
+            </div>
+            <div class="ml-auto">
+              <span class="icon text-2xl">more_vert</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-2 w-130">
+          <div class="relative">
+            <img src="https://placehold.co/520x292?text=Thumbnail" alt="Cerydra Bouncing thumbnail" class="rounded-xl">
+            <span class="absolute bottom-2 right-2 text-xs bg-black/70 px-1 py-[2px] rounded-sm">0:42</span>
+          </div>
+          <div class="flex gap-2">
+            <div class="w-9 shrink-0">
+              <img src="https://placehold.co/48x48?text=Pfp" alt="lement pfp" class="rounded-full">
+            </div>
+            <div class="flex flex-col text-zinc-300">
+              <span class="font-bold text-white text-base text-wrap">Cerydra Bouncing</span>
+              <span class="text-sm">Akihiyo <span class="icon filled align-middle">check_circle</span></span>
+              <spann class="text-sm">477K views • 3 months ago</span>
+            </div>
+            <div class="ml-auto">
+              <span class="icon text-2xl">more_vert</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-2 w-130">
+          <div class="relative">
+            <img src="https://placehold.co/520x292?text=Thumbnail" alt="[Spiral Abyss 12] C0 Mualani Speedruns Every Chamber thumbnail" class="rounded-xl">
+            <span class="absolute bottom-2 right-2 text-xs bg-black/70 px-1 py-[2px] rounded-sm">6:35</span>
+          </div>
+          <div class="flex gap-2">
+            <div class="w-9 shrink-0">
+              <img src="https://placehold.co/48x48?text=Pfp" alt="lement pfp" class="rounded-full">
+            </div>
+            <div class="flex flex-col text-zinc-300">
+              <span class="font-bold text-white text-base text-wrap">[Spiral Abyss 12] C0 Mualani Speedruns Every Chamber</span>
+              <span class="text-sm">The Blind Hawk</span>
+              <spann class="text-sm">132 views • 1 day ago</span>
+            </div>
+            <div class="ml-auto">
+              <span class="icon text-2xl">more_vert</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-2 w-130">
+          <div class="relative">
+            <img src="https://placehold.co/520x292?text=Thumbnail" alt="Every Argument For Atheism thumbnail" class="rounded-xl">
+            <span class="absolute bottom-2 right-2 text-xs bg-black/70 px-1 py-[2px] rounded-sm">46:23</span>
+          </div>
+          <div class="flex gap-2">
+            <div class="w-9 shrink-0">
+              <img src="https://placehold.co/48x48?text=Pfp" alt="alex pfp" class="rounded-full">
+            </div>
+            <div class="flex flex-col text-zinc-300">
+              <span class="font-bold text-white text-base text-wrap">Every Argument For Atheism</span>
+              <span class="text-sm">Alex O'Connor</span>
+              <spann class="text-sm">4.8M views • 1 year ago</span>
+            </div>
+            <div class="ml-auto">
+              <span class="icon text-2xl">more_vert</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-2 w-130">
+          <div class="relative">
+            <img src="https://placehold.co/520x292?text=Thumbnail" alt="The BEST Sunday Teams & Synergies in Honkai: Star Rail 2.7 - HSR Guide thumbnail" class="rounded-xl">
+            <span class="absolute bottom-2 right-2 text-xs bg-black/70 px-1 py-[2px] rounded-sm">28:36</span>
+          </div>
+          <div class="flex gap-2">
+            <div class="w-9 shrink-0">
+              <img src="https://placehold.co/48x48?text=Pfp" alt="alex pfp" class="rounded-full">
+            </div>
+            <div class="flex flex-col text-zinc-300">
+              <span class="font-bold text-white text-base text-wrap">The BEST Sunday Teams & Synergies in Honkai: Star Rail 2.7 - HSR Guide</span>
+              <span class="text-sm">Guoba Certified <span class="icon filled align-middle">check_circle</span></span>
+              <spann class="text-sm">159K views • 1 year ago</span>
+            </div>
+            <div class="ml-auto">
+              <span class="icon text-2xl">more_vert</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-2 w-130">
+          <div class="relative">
+            <img src="https://placehold.co/520x292?text=Thumbnail" alt="The TROJAN Test" class="rounded-xl">
+            <span class="absolute bottom-2 right-2 text-xs bg-black/70 px-1 py-[2px] rounded-sm">6:39</span>
+          </div>
+          <div class="flex gap-2">
+            <div class="w-9 shrink-0">
+              <img src="https://placehold.co/48x48?text=Pfp" alt="alex pfp" class="rounded-full">
+            </div>
+            <div class="flex flex-col text-zinc-300">
+              <span class="font-bold text-white text-base text-wrap">The TROJAN Test</span>
+              <span class="text-sm">minuetephysics <span class="icon filled align-middle">check_circle</span></span>
+              <spann class="text-sm">263K • 2 days ago</span>
+            </div>
+            <div class="ml-auto">
+              <span class="icon text-2xl">more_vert</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-2 w-130">
+          <div class="relative">
+            <img src="https://placehold.co/520x292?text=Thumbnail" alt="Does The CIA Make People Disappear? CIA Spy Reveals | LADbible stories thumbnail" class="rounded-xl">
+            <span class="absolute bottom-2 right-2 text-xs bg-black/70 px-1 py-[2px] rounded-sm">30:38</span>
+          </div>
+          <div class="flex gap-2">
+            <div class="w-9 shrink-0">
+              <img src="https://placehold.co/48x48?text=Pfp" alt="alex pfp" class="rounded-full">
+            </div>
+            <div class="flex flex-col text-zinc-300">
+              <span class="font-bold text-white text-base text-wrap">Does The CIA Make People Disappear? CIA Spy Reveals | LADbible stories</span>
+              <span class="text-sm">LADbible Stories <span class="icon filled align-middle">check_circle</span></span>
+              <spann class="text-sm">1M views • 2 days ago</span>
+            </div>
+            <div class="ml-auto">
+              <span class="icon text-2xl">more_vert</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

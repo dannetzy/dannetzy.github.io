@@ -4,6 +4,7 @@
   --color-html: #E34C26;
   --color-css: #264DE4;
   --color-js: #F7DF1E;
+  --color-tailwind: #00bcff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -253,5 +254,10 @@ i {
 
 .tag.js {
   background-color: var(--color-js);
+  color: black;
+}
+
+.tag.tailwind {
+  background-color: var(--color-tailwind);
   color: black;
 }
