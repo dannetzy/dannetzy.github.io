@@ -504,9 +504,6 @@
     font-size: var(--text-xs);
     line-height: var(--tw-leading, var(--text-xs--line-height));
   }
-  .text-\[0\.125rem\] {
-    font-size: 0.125rem;
-  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
@@ -544,6 +541,9 @@
   }
   .text-zinc-600 {
     color: var(--color-zinc-600);
+  }
+  .underline {
+    text-decoration-line: underline;
   }
   .backdrop-blur-2xl {
     --tw-backdrop-blur: blur(var(--blur-2xl));
@@ -592,6 +592,13 @@
             background-color: var(--color-zinc-700);
           }
         }
+      }
+    }
+  }
+  .hover\:no-underline {
+    &:hover {
+      @media (hover: hover) {
+        text-decoration-line: none;
       }
     }
   }
